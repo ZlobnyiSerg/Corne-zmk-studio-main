@@ -2,7 +2,7 @@
 
 Скачиваем ZMK Studio и устанавливаем:
 
-https://github.com/zmkfirmware/zmk-studio/releases/tag/v0.1.2
+https://github.com/zmkfirmware/zmk-studio/releases
 
 немного по сплитам змк
 
