@@ -16,11 +16,11 @@
 #define ADJ 4
 
 &lt {
-    quick_tap_ms = <175>;
+    quick_tap_ms = <150>;
 };
 
 &mt {
-    quick_tap_ms = <175>;
+    quick_tap_ms = <150>;
 };
 
 / {
@@ -80,7 +80,7 @@
 
         layer_2 {
             bindings = <
-                        &trans      &kp APOS    &kp LT      &kp GT       &kp DQT    &kp DOT     &kp AMPERSAND &kp EQUAL &kp LBKT    &kp RBKT    &kp PERCENT &trans
+                        &trans      &kp APOS    &kp LT      &kp GT       &kp DQT    &kp DOT     &kp AMPERSAND &arrow_macro &kp LBKT    &kp RBKT    &kp PERCENT &trans
                         &trans      &kp EXCL    &kp MINUS   &kp PLUS     &kp EQUAL  &kp HASH    &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK   &trans
                         &trans      &kp CARET   &kp SLASH   &kp ASTRK    &kp BSLH   &kp GRAVE   &kp TILDE   &kp DOLLAR  &kp LBRC    &kp RBRC    &kp AT_SIGN &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
