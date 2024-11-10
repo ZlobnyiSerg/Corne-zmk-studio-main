@@ -41,13 +41,17 @@
             key-positions = <39 38>;
             bindings = <&mo ADJ>;
         };
-/*
- *       combo_dash {
- *           timeout-ms = <50>; // Adjust if needed
- *           key-positions = <&kp J>, <&kp K>;
- *           bindings = <&kp MINUS>;
- *       };
- */
+
+    combo_dash {
+        timeout-ms = <50>; // Adjust if needed
+        key-positions = <&kp J>, <&kp K>;
+        bindings = <&kp MINUS>;
+    };
+    
+    combo_mdash {
+        timeout-ms = <50>; // Adjust if needed
+        key-positions = <&kp J>, <&kp K>, <&kp L>;
+        bindings = <&text "--">;
     };
 };
 
@@ -67,8 +71,8 @@
         layer_1 {
             bindings = <
                         &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-                        &trans      &trans      &trans      &trans      &RPAR       &kp LA(INS) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-                        &trans      &trans      &trans      &trans      &QMARK      &kp DEL     &kp END     &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
+                        &trans      &trans      &trans      &trans      &kp RPAR    &kp LA(INS) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+                        &trans      &trans      &trans      &trans      &kp QMARK   &kp DEL     &kp END     &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
             >;
         };
@@ -94,8 +98,8 @@
         adjust_layer {
             bindings = <
                         &bootloader           &none           &none        &none        &none        &none        &none        &none        &none        &none        &studio_unlock  &bootloader
-                        &bt BT_CLR            &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR
-                        &ext_power EP_OFF     &kp KP_NUM      &none        &none        &none        &none        &none        &none        &none        &none        &none        &ext_power EP_OFF
+                        &bt BT_CLR            &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none        &none        &none        &none        &none           &none
+                        &ext_power EP_OFF     &kp KP_NUM      &none        &none        &none        &none        &none        &none        &none        &none        &none           &ext_power EP_OFF
                                                                 &none                   &none           &none        &none        &none        &none
             >;
         };
