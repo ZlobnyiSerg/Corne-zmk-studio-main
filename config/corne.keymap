@@ -75,7 +75,7 @@
         layer_2 {
             bindings = <
                         &trans      &kp APOS    &kp LT      &kp GT       &kp DQT    &kp DOT     &kp AMPERSAND &kp EQUAL &kp LBKT    &kp RBKT    &kp PERCENT &trans
-                        &trans      &kp EXCL    &kp MINUS   &kp PLUS     &kp KP_EQUAL &kp HASH  &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK   &trans
+                        &trans      &kp EXCL    &kp MINUS   &kp PLUS     &kp EQUAL  &kp HASH    &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK   &trans
                         &trans      &kp CARET   &kp SLASH   &kp ASTRK    &kp BSLH   &kp GRAVE   &kp TILDE   &kp DOLLAR  &kp LBRC    &kp RBRC    &kp AT_SIGN &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
             >;
@@ -86,7 +86,7 @@
                         &trans      &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp PSCRN   &kp N7      &kp N8      &kp N9     &kp PLUS          &trans
                         &trans      &trans      &kp F5      &kp F6      &kp F7      &kp F8      &kp SLASH   &kp N4      &kp N5      &kp N6     &kp MINUS         &trans
                         &trans      &trans      &kp F9      &kp F10     &kp F11     &kp F12     &kp DOT     &kp N1      &kp N2      &kp N3     &kp KP_MULTIPLY   &trans
-                                                                &trans      &trans      &trans      &trans      &trans         &trans
+                                                                &trans      &trans      &trans      &trans      &trans         &N0
             >;
         };
 
