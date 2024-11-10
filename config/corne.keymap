@@ -18,11 +18,17 @@
 #define QUEST 0x003F
 
 &lt {
-    quick_tap_ms = <150>;
+    quick_tap_ms = <200>;      // Allows for quick tap-tap
+    flavor = "hold-preferred"; // Better for layer activation
+    tapping-term-ms = <150>;   // Shorter delay for faster layer switching
+    require-prior-idle-ms = <100>; // Helps prevent accidental activations
 };
 
 &mt {
-    quick_tap_ms = <150>;
+    quick_tap_ms = <100>;     // Faster double-tap response
+    tapping-term-ms = <200>;  // Shorter hold time needed for shift
+    global-quick-tap;         // Better for spacebar use
+    flavor = "tap-preferred"; // Prioritize space over shift for better typing
 };
 
 / {
@@ -99,7 +105,7 @@
             bindings = <
                         &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
                         &trans      &trans      &trans      &kp LPAR    &kp RPAR    &kp LA(INS) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-                        &trans      &trans      &trans      &kp LS(N2)  &unicode QUEST &kp DEL    &kp END     &kp LC(LEFT) &kp PG_DN  &kp PG_UP   &kp LC(RIGHT)    &trans
+                        &trans      &trans      &trans      &unicode 0x0022  &unicode QUEST &kp DEL    &kp END     &kp LC(LEFT) &kp PG_DN  &kp PG_UP   &kp LC(RIGHT)    &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
             >;
         };
