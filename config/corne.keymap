@@ -49,7 +49,7 @@
         layer_1 {
             bindings = <
                         &trans      &kp 1       &kp 2       &kp 3       &kp 4       &kp 5       &kp 6       &kp 7       &kp 8       &kp 9       &kp 0       &trans
-                        &trans      &trans      &tran       &trans      &trans      &kp LA(INT) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+                        &trans      &trans      &tran       &trans      &trans      &kp LA(INS) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
                         &trans      &trans      &trans      &trans      &trans      &kp DEL     &kp END     &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
             >;
