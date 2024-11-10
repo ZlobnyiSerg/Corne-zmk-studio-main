@@ -46,13 +46,13 @@
 
         combo_dash {
             timeout-ms = <50>; // Adjust if needed
-            key-positions = <19 20>; // J+K
+            key-positions = <19 20>; // J + K
             bindings = <&kp MINUS>;
         };
 
         combo_question {
             timeout-ms = <50>; // Adjust if needed
-            key-positions = <18 19>; // H and J
+            key-positions = <18 19>; // H + J
             bindings = <&kp QMARK>;
         };
     };
