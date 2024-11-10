@@ -27,8 +27,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <LWR RSE>;
+            then-layer = <FUN>;
         };
     };
 };
@@ -39,7 +39,7 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <39 38>;
-            bindings = <&mo FUN>;
+            bindings = <&mo ADJ>;
         };
     };
 };
@@ -59,7 +59,7 @@
 
         layer_1 {
             bindings = <
-                        &trans      &kp 1       &kp 2       &kp 3       &kp 4       &kp 5       &kp 6       &kp 7       &kp 8       &kp 9       &kp 0       &trans
+                        &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
                         &trans      &trans      &trans      &trans      &trans      &kp LA(INS) &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
                         &trans      &trans      &trans      &trans      &trans      &kp DEL     &kp END     &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
@@ -68,7 +68,7 @@
 
         layer_2 {
             bindings = <
-                        &trans      &kp APOS    &kp LT      &kp GT       &kp SQT    &kp DOT     &kp AMPERSAND &kp EQUAL   &kp LBKT    &kp RBKT    &kp PERCENT &trans
+                        &trans      &kp APOS    &kp LT      &kp GT       &kp SQT    &kp DOT     &kp AMPERSAND &kp EQUAL &kp LBKT    &kp RBKT    &kp PERCENT &trans
                         &trans      &kp EXCL    &kp MINUS   &kp PLUS     &kp KP_EQUAL &kp HASH  &kp PIPE    &kp COLON   &kp LPAR    &kp RPAR    &kp QMARK   &trans
                         &trans      &kp CARET   &kp SLASH   &kp ASTRK    &kp BSLH   &kp GRAVE   &kp TILDE   &kp DOLLAR  &kp LBRC    &kp RBRC    &kp AT_SIGN &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
