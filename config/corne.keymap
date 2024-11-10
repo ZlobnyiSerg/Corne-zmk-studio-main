@@ -41,12 +41,13 @@
             key-positions = <39 38>;
             bindings = <&mo ADJ>;
         };
-
-        combo_dash {
-            timeout-ms = <50>; // Adjust if needed
-            key-positions = <&kp J>, <&kp K>;
-            bindings = <&kp MINUS>;
-        };
+/*
+ *       combo_dash {
+ *           timeout-ms = <50>; // Adjust if needed
+ *           key-positions = <&kp J>, <&kp K>;
+ *           bindings = <&kp MINUS>;
+ *       };
+ */
     };
 };
 
