@@ -18,16 +18,13 @@
 #define QUEST 0x003F
 
 &lt {
-    quick_tap_ms = <200>;      // Allows for quick tap-tap
     flavor = "hold-preferred"; // Better for layer activation
     tapping-term-ms = <150>;   // Shorter delay for faster layer switching
     require-prior-idle-ms = <100>; // Helps prevent accidental activations
 };
 
 &mt {
-    quick_tap_ms = <100>;     // Faster double-tap response
     tapping-term-ms = <200>;  // Shorter hold time needed for shift
-    global-quick-tap;         // Better for spacebar use
     flavor = "tap-preferred"; // Prioritize space over shift for better typing
 };
 
