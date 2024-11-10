@@ -57,6 +57,19 @@
 };
 
 / {
+    macros {
+        arrow_macro: arrow_macro {
+            label = "ARROW_MACRO";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;  // Small delay between characters
+            bindings = <&kp EQUAL &kp GT>;  // Types "=" then ">"
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
