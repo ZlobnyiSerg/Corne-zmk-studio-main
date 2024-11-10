@@ -51,7 +51,7 @@
         combo_mdash {
             timeout-ms = <50>; // Adjust if needed
             key-positions = <&kp J>, <&kp K>, <&kp L>;
-            bindings = <&text "--">; // Output an em dash (—) using text replacement
+            bindings = <&kp U2014>; // Unicode for em dash (—)
         };
     };
 };
