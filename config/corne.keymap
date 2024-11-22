@@ -24,7 +24,7 @@
 #define QUEST 0x003F
 
 // Unicode characters
-ZMK_UNICODE_SINGLE(dbl_quot, L0, L0, L2, L2)
+ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
 
 &lt {
     quick_tap_ms = <120>;
