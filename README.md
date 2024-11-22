@@ -8,6 +8,9 @@
 
 Аккорд для дефиса - J+K.
 
+Данная раскладка имеет универсальные символы багодаря библиотеке макросов по юникод-символам: https://github.com/urob/zmk-helpers
+Для корректной работы требуется установка [WinCompose](https://github.com/samhocevar/wincompose)
+
 
 # Corne-zmk-studio
 
