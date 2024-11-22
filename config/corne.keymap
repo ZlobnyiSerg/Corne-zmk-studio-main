@@ -23,6 +23,9 @@
 
 #define QUEST 0x003F
 
+// Unicode characters
+ZMK_UNICODE_SINGLE(dbl_quot, L0, L0, L2, L2)
+
 &lt {
     quick_tap_ms = <120>;
 };
@@ -93,14 +96,14 @@
             bindings = <
                         &trans      &kp N1      &kp N2      &kp N3      &kp N4          &kp N5      &kp N6      &kp N7       &kp N8      &kp N9      &kp N0         &trans
                         &kp LA(TAB) &trans      &trans      &kp LPAR    &kp RPAR        &kp LA(INS) &kp HOME    &kp LEFT     &kp DOWN    &kp UP      &kp RIGHT      &trans
-                        &trans      &trans      &trans      &kp LS(N2)  &kp LS(FSLH)    &kp DEL     &kp END     &kp LC(LEFT) &kp PG_DN   &kp PG_UP   &kp LC(RIGHT)  &trans
+                        &trans      &trans      &trans      &dbl_quot   &kp LS(FSLH)    &kp DEL     &kp END     &kp LC(LEFT) &kp PG_DN   &kp PG_UP   &kp LC(RIGHT)  &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
             >;
         };
 
         layer_2 {
             bindings = <
-                        &trans      &kp APOS    &kp LT      &kp GT       &kp DQT    &kp DOT     &kp AMPERSAND &arrow_macro &kp LBKT    &kp RBKT    &kp PERCENT &trans
+                        &trans      &kp APOS    &kp LT      &kp GT       &dbl_quot  &kp DOT     &kp AMPERSAND &arrow_macro &kp LBKT    &kp RBKT    &kp PERCENT &trans
                         &trans      &kp EXCL    &kp MINUS   &kp PLUS     &kp EQUAL  &kp HASH    &kp PIPE      &kp COLON    &kp LPAR    &kp RPAR    &kp QMARK   &trans
                         &trans      &kp CARET   &kp SLASH   &kp ASTRK    &kp BSLH   &kp GRAVE   &kp TILDE     &kp DOLLAR   &kp LBRC    &kp RBRC    &kp AT_SIGN &trans
                                                                 &trans      &trans      &trans      &trans      &trans         &trans
