@@ -14,12 +14,12 @@
 ---
 
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: corne_left
     snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: corne_right
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: settings_reset 
 
 
