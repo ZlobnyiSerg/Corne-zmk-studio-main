@@ -132,6 +132,29 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
 };
 
 
+&pinctrl {
+    pwm_default: pwm_default {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 0, 8)>; // Replace with your actual LED pin
+            nordic,invert;
+        };
+    };
+
+    pwm_sleep: pwm_sleep {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 0, 8)>; // Same pin as in default
+            low-power-enable;
+        };
+    };
+};
+
+&pwm0 {
+    status = "okay";
+    pinctrl-0 = <&pwm_default>;
+    pinctrl-1 = <&pwm_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+
 / {
     pwmleds {
         compatible = "pwm-leds";
@@ -148,8 +171,4 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
     aliases {
         backlight = &pwm_backlight;
     };
-};
-
-&pwm0 {
-    status = "okay";
 };
