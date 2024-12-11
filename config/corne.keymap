@@ -162,9 +162,6 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
         pwm_backlight: pwm_backlight {
             pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
             label = "Backlight";
-            
-            brightness-levels = <0 10 20 30 40 50 60 70 80 90 100>;
-            default-brightness-level = <50>;
         };
     };
 
