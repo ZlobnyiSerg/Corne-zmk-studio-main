@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/backlight.h>
 
 // Helper for UNICODE keymaps
 #include "zmk-helpers/helper.h"
@@ -85,7 +86,7 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
 
         base_layer {
             bindings = <
-                        &kp ESC     &kp Q       &kp W       &kp E       &kp R       &bl BL_TOG       &kp Y       &kp U       &kp I       &kp O       &kp P       &mt LGUI LBKT
+                        &kp ESC     &kp Q       &kp W       &kp E       &kp R       &bl BL_TOG  &kp Y       &kp U       &kp I       &kp O       &kp P       &mt LGUI LBKT
                         &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
                         &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt LALT RBKT
                                                                 &kp LCTRL   &mo LWR  &kp SPACE &mt RSHIFT ENTER &lt RSE BSPC &kp LALT
@@ -132,10 +133,23 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
 
 
 / {
-    backlight: pwm_backlight {
-        compatible = "pwm-backlight";
-        pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_INVERTED>;
-        brightness-levels = <0 10 20 30 40 50 60 70 80 90 100>;
-        default-brightness-level = <50>;
+    pwmleds {
+        compatible = "pwm-leds";
+        
+        pwm_backlight: pwm_backlight {
+            pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+            label = "Backlight";
+            
+            brightness-levels = <0 10 20 30 40 50 60 70 80 90 100>;
+            default-brightness-level = <50>;
+        };
     };
+
+    aliases {
+        backlight = &pwm_backlight;
+    };
+};
+
+&pwm0 {
+    status = "okay";
 };
