@@ -95,7 +95,7 @@ ZMK_UNICODE_SINGLE(dbl_quot, N0, N0, N2, N2)
 
         base_layer {
             bindings = <
-                        &kp ESC     &kp Q       &kp W       &kp E       &kp R       &bl BL_TOG  &kp Y       &kp U       &kp I       &kp O       &kp P       &mt LGUI LBKT
+                        &kp ESC     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &mt LGUI LBKT
                         &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
                         &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt LALT RBKT
                                                                 &kp LCTRL   &mo LWR  &kp SPACE &mt RSHIFT ENTER &lt RSE BSPC &kp LALT
